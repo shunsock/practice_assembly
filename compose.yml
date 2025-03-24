@@ -1,0 +1,8 @@
+services:
+  assembly:
+    build: .
+    container_name: assembly-container
+    working_dir: /workspace
+    volumes:
+      - ./src:/workspace
+    tty: true
